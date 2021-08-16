@@ -1,0 +1,106 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+body, html {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* header */
+nav {
+  background-color: #2C3E50;
+  min-height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav * {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 26px;
+}
+
+nav .nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+@media screen and (max-width: 600px) {
+  nav .nav-items {
+    display: none;
+  }
+}
+
+nav .nav-items .nav-item {
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+
+/* main section */
+section.main {
+  background-color: #1ABC9C;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.main img.avatar {
+  border-radius: 1000px;
+  height: 200px;
+  width: 200px;
+}
+@media screen and (max-width: 600px) {
+  section.main img.avatar {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+section.main h1 {
+  font-size: 48px;
+}
+@media screen and (max-width: 600px) {
+  section.main h1 {
+    font-size: 32px;
+  }
+}
+
+section.main .tag-box {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+section.main .tag-box .line {
+  width: 100px;
+  height: 4px;
+  background-color: #fff;
+  margin: 0 10px;
+  border-radius: 1000px;
+}
+
+section.main .description {
+  text-align: center;
+  font-size: 24px;
+}
+
+section.main .description div {
+  color: #ddd;
+}
+
+section.main .description div:first-child {
+  margin-bottom: 10px;
+}
